@@ -1,0 +1,188 @@
+.content {
+  width: 100%;
+}
+
+.row {
+  background-color: LightSlateGrey;
+  text-align: center;
+  font-size: 18px;
+}
+
+.row > div {
+  background-color: #f1f1f1;
+  border-right: 1px solid LightSlateGrey;
+  border-top: 1px solid LightSlateGrey;
+  border-collapse: collapse;
+  padding: 5px;
+  display: inline-block;
+  width: 10%;
+  height: 1em;
+  vertical-align: top;
+}
+
+.row > div:first-child {
+  border-left: 1px solid LightSlateGrey;
+  width: 30%;
+  padding-left: 0;
+}
+
+.footer {  
+  padding: 10px;
+}
+
+.footer > div:first-child {
+  padding: 10px 30px;
+  border: 1px solid LightSlateGrey;
+  background-color: #ADD8E6;
+  width: 80%;
+  height: auto;
+}
+
+.newskill {
+  float: left;
+  vertical-align: text-bottom;
+  height: 40px;
+  margin: 10px;
+}
+
+.input.newskill {
+  width: 50ch;
+  background-color: #ffffff;
+  transition: background-color 500ms linear;
+}
+
+.input.newskill:focus {
+  background-color:#D3D3D3;
+}
+
+.button.newskill {
+  margin-left: 30px;
+  padding-top: 10px;
+  height: 30px;
+  width: 15ch;
+  border: 1px solid LightSlateGrey;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.span.newskill {
+  margin-left: 30px;
+  padding-top: 10px;
+  height: 30px;
+  width: 30ch;
+}
+
+.button.newskill:hover {
+  color: #ffffff;
+  background-color: LightSlateGrey;
+  transition: background-color 500ms linear;
+}
+
+.category {  
+  font-size: 14px;  
+  position: sticky;
+}
+
+.category > div:first-child {  
+  width: 100%;
+  border: none;
+  background-color: LightSlateGrey;
+  font-weight: bold;
+  color: white;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+}
+
+.header > div {
+  background-color: #ADD8E6;
+  font-family:Courier New;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.warning {
+  float: left;
+  background-color: #f1f1f1;
+  color: red;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.delete_icon {
+  float: left;
+  width: 1.3em;
+  height: 1.3em;
+  background-color: #f1f1f1;
+}
+
+.popupTip {
+    visibility: hidden;
+    width: 200px;
+    padding: 10px;
+    background-color: #87CEFA;
+    color: #4B0082;
+    position: absolute;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 99;
+}
+
+.popupTip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left:50%; 
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #87CEFA transparent transparent transparent;
+}
+
+.popupDesciption {
+    visibility: hidden;
+    width: 800px;
+    padding: 20px;
+    background-color: #555;
+    color: #fff;
+    position: absolute;
+    border-radius: 6px;
+    z-index: 99;
+}
+
+.close_button {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.desc_title {
+    background-image: linear-gradient(to left, rgba(230,230,250,0), rgba(230,230,250,1));
+    color: #CD853F;
+    font-size: 36px;
+    margin: 30px 30px 30px 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+.desc_content {
+    font-size: 26px;
+    margin: 10px;
+    line-height: 100%;
+}
+
+.desc_content:last-child {
+    font-size: 20px;
+    line-height: 150%;
+}
+
+td:first-child, th:first-child{
+   width: 500px; 
+}
+
+td{
+  border-color: red;
+}
